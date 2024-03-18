@@ -1,40 +1,35 @@
-# MachadodeAssis_project
-Estudo das bibliotecas NLTK e scpaCy, corpora Machado
+# Projeto MachadodeAssis
 
-# O que foi feito/estudado aqui: 
+Este projeto de estudo que foca nas bibliotecas NLTK e spaCy utilizando o corpus das obras de Machado de Assis.
 
-## Pré-processamento do texto: limpeza do corpus com NLTK
-- seleção apenas de caracteres não alfa-numéricos e padronização para todas as letras em minúsculo 
-- remoção de stopwords
-- junção dos tokens novamente em formato de texto
-- tokenização
-- contagem de frequência
-  - plotagem do gráfico de frequência
+## Funcionalidades Implementadas:
 
-## Concordânciador simples
-- divisão com método split, array de strings
-- concordance()
+1. **Pré-processamento do Texto:**
+   - Limpeza do corpus com NLTK, incluindo:
+     - Seleção apenas de caracteres não alfanuméricos e padronização para letras minúsculas.
+     - Remoção de stopwords.
+     - Junção dos tokens novamente em formato de texto.
+   - Tokenização.
+   - Contagem de frequência.
+   - Plotagem do gráfico de frequência.
 
-## Similaridade
-- temos uma lista de palavras que tendem a ocorrer no mesmo contexto 
-  - Nesse caso, o contexto são apenas as palavras que ocorrem frequentemente de qualquer lado da palavra.
+2. **Concordânciador Simples:**
+   - Divisão com método split, gerando um array de strings.
+   - Utilização da função concordance().
 
-## Bigramas
-Um bigrama ou digrama é uma sequência de dois elementos adjacentes de uma sequência de tokens, que normalmente são letras, sílabas ou palavras.
+3. **Similaridade:**
+   - Identificação de palavras que tendem a ocorrer no mesmo contexto.
 
-São palavras no texto que possuem um sentido único estando juntas, podendo até ocorrer separadas, mas com um sentido quando juntas.
+4. **Bigramas:**
+   - Análise da ocorrência de palavras ao longo de todo o texto, incluindo a posição na lista em que a palavra aparece.
 
-- analisar a ocorrência das palavras ao longo de todo o texto - posição da lista em que a palavra aparece
+5. **Comparação com Outra Obra do Mesmo Autor:**
+   - Utilização de POS-tagging para a etiquetagem morfossintática de cada palavra do corpus.
+   - Análise comparativa entre duas obras.
 
-# COMPARANDO COM OUTRA COMPORA DO MESMO AUTOR
+6. **Gráficos:**
+   - Utilização da biblioteca matplotlib.pyplot para estatística descritiva.
+   - Criação de gráficos de barras simples.
+   - Criação de dicionário de ocorrência.
+   - Identificação de entidades nomeadas (NER) com spaCy.
 
-# Pos-tagging: 
-etiquetagem morfossintática de cada palavra desse corpora
-
-## Gráficos
-biblioteca: matplotlib.pyplot - estatística descritiva
-- Gráfico de barras simples
-
-## Dicionário de ocorrência
-
-## Identificar entidades nomeadas(NER) - com spacy
